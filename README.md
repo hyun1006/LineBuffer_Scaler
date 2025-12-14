@@ -4,6 +4,7 @@
 
 ![Language](https://img.shields.io/badge/Language-Verilog_HDL-007ACC?style=for-the-badge&logo=verilog&logoColor=white)
 ![Tool](https://img.shields.io/badge/Tool-Vivado-FF5252?style=for-the-badge&logo=xilinx&logoColor=white)
+[![EDA Playground](https://img.shields.io/badge/Simulation-EDA_Playground-1abc9c?style=for-the-badge)](https://www.edaplayground.com/x/EXAMPLE)
 ![Algorithm](https://img.shields.io/badge/Algorithm-Bilinear_Interpolation-blue?style=for-the-badge)
 ![Hardware](https://img.shields.io/badge/H%2FW-Line_Buffer_Architecture-orange?style=for-the-badge)
 
@@ -21,6 +22,8 @@
 
 이 프로젝트는 **FPGA** 상에서 입력되는 영상 스트림을 실시간으로 스케일링(Scaling, 해상도 변환)하는 하드웨어 설계입니다.
 이미지 처리에서 스케일링을 수행하려면 수직 방향의 픽셀 데이터가 필요하기 때문에, 일반적으로 프레임 버퍼를 사용합니다. 하지만 이 프로젝트는 **라인 버퍼(Line Buffer)** 아키텍처를 도입하여 전체 프레임을 저장하지 않고도 **적은 메모리 자원(BRAM)으로 고속 연산**을 수행하는 데 중점을 두었습니다.
+
+
 
 ### ✨ 핵심 설계 특징 (Key Features)
 * **Line Buffer Architecture:** FIFO 또는 BRAM을 활용하여 N개의 행(Row) 데이터를 임시 저장, 윈도우(Window) 단위의 연산 환경 제공.
@@ -109,6 +112,3 @@ graph LR
 -----
 
 Copyright ⓒ 2025. SEOKHYUN HWANG. All rights reserved.
-
-```
-```
